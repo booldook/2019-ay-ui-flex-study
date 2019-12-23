@@ -20,3 +20,7 @@ background-size: cover; height: 80vh; display: flex; justify-content: center; al
 .main-slogan > span:first-child {display: inline-block; padding: 0.5vw 1vw; background-color: rgba(0, 0, 0, 0.7);}
 
 /* Projects */
+.prj-wrap {display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;}
+.prj-wrap > li {width: 24%; margin-bottom: 1%; position: relative;}
+.prj-wrap > li > div {background-color: #333; color: #fff; 
+	padding: 0.5rem; position: absolute; top: 0; left: 0;}
