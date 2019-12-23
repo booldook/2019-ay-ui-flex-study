@@ -1,0 +1,9 @@
+body {height: 5000px;}
+.header {padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.3);
+display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.25rem; position: fixed; width: 100%;}
+.logo {font-size: 1.25rem;}
+.logo > span:last-child {font-weight: normal;}
+.nav-wrap {display: flex;}
+.nav-wrap > div {padding: 0.5rem 1rem; cursor: pointer;
+transition: all 0.5s;}
+.nav-wrap > div:hover {background-color: #ccc;}
