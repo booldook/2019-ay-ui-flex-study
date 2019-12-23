@@ -1,10 +1,11 @@
-body {height: 5000px;}
-.wrap {max-width: 900px; margin: 50px auto;}
+html, body {font-size: 16px; height: 5000px;}
+.wrap {max-width: 900px; margin: 50px auto; padding: 0 2%;}
 .wrap > h2 {padding: 1rem 0; border-bottom: 1px solid #ccc; font-weight: normal; letter-spacing: 0.25rem; margin-bottom: 2rem; color: #333;}
+.wrap > p {padding-bottom: 1rem; line-height: 1.5; text-align: justify; color: #555; font-size: 0.875rem;}
 
 
 /* Header */
-.header {padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.3);
+.header {padding: 0.5rem 1rem; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.3); z-index: 9999;
 display: flex; justify-content: space-between; align-items: center; letter-spacing: 0.25rem; position: fixed; width: 100%;}
 .logo {font-size: 1.25rem;}
 .logo > span:last-child {font-weight: normal;}
@@ -12,6 +13,7 @@ display: flex; justify-content: space-between; align-items: center; letter-spaci
 .nav-wrap > div {padding: 0.5rem 1rem; cursor: pointer;
 transition: all 0.5s;}
 .nav-wrap > div:hover {background-color: #ccc;}
+.mobile-nav {letter-spacing: normal; display: none;}
 
 /* Main Banner */
 .main-banner {background: url(../img/architect.jpg) no-repeat center;
@@ -24,3 +26,31 @@ background-size: cover; height: 80vh; display: flex; justify-content: center; al
 .prj-wrap > li {width: 24%; margin-bottom: 1%; position: relative;}
 .prj-wrap > li > div {background-color: #333; color: #fff; 
 	padding: 0.5rem; position: absolute; top: 0; left: 0;}
+.member-wrap {margin: 2rem 0; display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap;}
+.member {width: 24%; margin-bottom: 2%;}
+.member > .name {padding: 0.5rem 0; font-size: 1.5rem;}
+.member > .title {padding: 0.5rem 0; font-size: 1rem; color: #999;}
+.member > .cont {padding: 0.5rem 0; font-size: 0.875rem; color: #333; line-height: 1.5;}
+.member > .btn-white {text-align: center;}
+
+
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+	
+}
+
+@media screen and (max-width: 768px) {
+	.nav-wrap > div {display: none;}
+	.nav-wrap > .mobile-nav {display: block;}
+	.prj-wrap > li {width: 48%; margin-bottom: 2%;}
+	.prj-wrap > li > div {position: static;}
+	.member {width: 48%;}
+}
+
+@media screen and (max-width: 575px) {
+	.prj-wrap {justify-content: center;}
+	.prj-wrap > li {width: 98%;}
+	.member-wrap {justify-content: center;}
+	.member {width: 96%;}
+}
